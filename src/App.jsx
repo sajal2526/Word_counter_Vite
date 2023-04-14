@@ -42,10 +42,8 @@ function App() {
     <div className="container my-3">
       <Routes>
          <Route path="/" element={<TextForm showAlert={showalert} heading="WordCounter is an utility which manipulates the text." mode={mode}/>}/>
-         <Route path="/about" element={<About/>}/>
-      </Routes>
-      
-            
+         <Route path="/about" element={<About mode={mode}/>}/>
+      </Routes>  
     </div>
     </BrowserRouter>
     </> 
